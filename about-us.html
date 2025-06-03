@@ -1,0 +1,64 @@
+<!-- FILE: about.html (About Us Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Book Haven</title>
+  <link rel="icon" href="images/Client3_Notebook.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="javascript/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo">
+        <img src="images/Client3_ToteBag.png" alt="Book Haven Logo" style="width: 50px; height: auto; margin-right: 10px;" />
+        <span style="font-size: 1.5rem; font-weight: bold; color: white;">Book Haven</span>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about">
+    <h1>About Book Haven</h1>
+    <p>We are a cozy bookstore serving readers since 1995. Open Mon–Sat, 9AM–6PM.</p>
+
+    <section class="contact-form">
+      <h2>Contact & Custom Orders</h2>
+      <form id="contactForm" onsubmit="return submitForm()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message or Custom Order" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="subscribe">
+      <label for="subscribeEmail">Subscribe to our Newsletter:</label>
+      <input type="email" id="subscribeEmail" placeholder="Your email" />
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about-us.html">About</a>
+      <a href="community.html">Community</a>
+    </div>
+    <div class="social">
+      <span>Follow us:</span>
+      <a href="#" aria-label="Facebook">Facebook<i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter">Twitter</i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram">Instagram</i></a>
+    </div>
+  </footer>
+</body>
+</html>

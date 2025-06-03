@@ -1,0 +1,96 @@
+<!-- FILE: gallery.html (Gallery Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Book Haven</title>
+  <link rel="icon" href="images/Client3_Notebook.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="javascript/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo">
+        <img src="images/Client3_ToteBag.png" alt="Book Haven Logo" style="width: 50px; height: auto; margin-right: 10px;" />
+        <span style="font-size: 1.5rem; font-weight: bold; color: white;">Book Haven</span>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <h1>Book Collection</h1>
+    <button onclick="viewCart()">View Cart</button>
+    <div class="book-grid">
+      <div class="book-item">
+        <img src="images/Client3_Book1.png" alt="Book 1" />
+        <p>BRIE MINE 4EVER</p>
+        <button onclick="addToCart('BRIE MINE 4EVER')">Add to Cart</button>
+      </div>
+      <div class="book-item">
+        <img src="images/Client3_Book2.png" alt="Book 2" />
+        <p>Glory Riders</p>
+        <button onclick="addToCart('Glory Riders')">Add to Cart</button>
+      </div>
+      <div class="book-item">
+        <img src="images/Client3_Book3.png" alt="Book 3" />
+        <p>Sorcerer's Shadowed Chronicles</p>
+        <button onclick="addToCart('Sorcerers Shadowed Chronicles')">Add to Cart</button>
+      </div>
+      <div class="book-item">
+        <img src="images/Client3_Magazine1.png" alt="Book 4" />
+        <p>BALL MAGAZINE</p>
+        <button onclick="addToCart('BALL MAGAZINE')">Add to Cart</button>
+      </div>
+      <div class="book-item">
+        <img src="images/Client3_Magazine2.png" alt="Book 5" />
+        <p>TRAVEL MAGAZINE</p>
+        <button onclick="addToCart('TRAVEL MAGAZINE')">Add to Cart</button>
+      </div>
+      <div class="book-item">
+        <img src="images/Client3_Magazine3.png" alt="Book 6" />
+        <p>EAT MAGAZINE</p>
+        <button onclick="addToCart('EAT MAGAZINE')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="processOrder()">Process Order</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="subscribe">
+      <label for="subscribeEmail">Subscribe to our Newsletter:</label>
+      <input type="email" id="subscribeEmail" placeholder="Your email" />
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about-us.html">About</a>
+      <a href="community.html">Community</a>
+    </div>
+    <div class="social">
+      <span>Follow us:</span>
+      <a href="#" aria-label="Facebook">Facebook<i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter">Twitter</i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram">Instagram</i></a>
+    </div>
+  </footer>
+</body>
+</html>

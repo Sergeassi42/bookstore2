@@ -1,0 +1,82 @@
+<!-- FILE: community.html (Custom Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Client3_Notebook.png" type="image/x-icon" />
+  <title>Community - Book Haven</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="javascript/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo">
+        <img src="images/Client3_ToteBag.png" alt="Book Haven Logo" style="width: 50px; height: auto; margin-right: 10px;" />
+        <span style="font-size: 1.5rem; font-weight: bold; color: white;">Book Haven</span>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="community">
+    <h1>Community Events & Testimonials</h1>
+
+    <section class="testimonials">
+      <h2>Customer Testimonials</h2>
+      <div id="testimonialList">
+        <div class="testimonial">
+          <img src="images/prof2.jpg" alt="Jane D." class="profile-pic">
+          <p><strong>Jane D.</strong>: "A paradise for book lovers!"</p>
+        </div>
+        <div class="testimonial">
+          <img src="images/prof1.jpg" alt="Carlos M." class="profile-pic">
+          <p><strong>Carlos M.</strong>: "Excellent variety and warm staff."</p>
+        </div>
+      </div>
+      <form id="testimonialForm" onsubmit="return addTestimonial()">
+        <h3>Leave Your Feedback</h3>
+        <input type="text" id="userName" placeholder="Your Name" required />
+        <input type="file" id="userPhoto" accept="image/*" required />
+        <textarea id="userMessage" placeholder="Your feedback" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Local Author Meetup - July 15</li>
+        <li>Children's Storytime - Every Saturday</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="subscribe">
+      <label for="subscribeEmail">Subscribe to our Newsletter:</label>
+      <input type="email" id="subscribeEmail" placeholder="Your email" />
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about-us.html">About</a>
+      <a href="community.html">Community</a>
+    </div>
+    <div class="social">
+      <span>Follow us:</span>
+      <a href="#" aria-label="Facebook">Facebook<i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter">Twitter</i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram">Instagram</i></a>
+    </div>
+  </footer>
+</body>
+</html>
