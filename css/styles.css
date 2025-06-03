@@ -42,7 +42,7 @@ body {
   }
   
   .hero {
-    background: url('../images/Client3_Notebook.png') no-repeat center center/cover;
+    background: url('../images/backgroundimage.jpg') no-repeat center center/cover;
     padding: 5rem;
     text-align: center;
     color: white;
